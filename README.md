@@ -31,7 +31,7 @@ A professional UEFI Shell application designed to enumerate and inspect system h
 2.  Add the `.inf` file path to your package's `.dsc` file.
 3.  Open your UEFI build environment and run:
     ```bash
-    build -a X64 -p AppPkg/AppPkg.dsc -m AppPkg/Applications/Dump_Handle/Dump_Handle.inf
+    build -p ShellPkg\ShellPkg.dsc -m ShellPkg\Application\Dump_Handle\Dump_Handle.inf -a X64 -t VS2019
     ```
 4.  The executable `Dump_Handle.efi` will be generated in your build output directory.
 
